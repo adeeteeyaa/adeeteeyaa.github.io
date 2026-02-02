@@ -5,16 +5,18 @@ title: Blog
 
 <div class="posts">
   {% for post in paginator.posts %}
-  <div class="post">
+  <div class="post-card">
     <h1 class="post-title">
-      <a href="{{ post.url }}">
+      <a href="{{ post.url }}" class="stretched-link">
         {{ post.title }}
       </a>
     </h1>
-
+    
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content }}
+    {% if post.description %}
+      <p class="post-description">{{ post.description }}</p>
+    {% endif %}
   </div>
   {% endfor %}
 </div>

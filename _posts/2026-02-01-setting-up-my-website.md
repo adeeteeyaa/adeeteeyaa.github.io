@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setting Up My Website
+description: My first blog post on this website about setting up this website.
 ---
 
 This is my first post on my website.
