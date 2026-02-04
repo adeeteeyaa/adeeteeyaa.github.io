@@ -1,6 +1,7 @@
 from scholarly import scholarly, ProxyGenerator
 import json
 import os
+from datetime import datetime # 1. Import datetime
 
 # Create a proxy generator
 # pg = ProxyGenerator()
@@ -25,7 +26,8 @@ i10_index = author.get('i10index', 0)
 stats = {
     "citations": total_citations,
     "hindex": h_index,
-    "i10index": i10_index
+    "i10index": i10_index,
+    "updated": datetime.now().isoformat() # 2. Add the timestamp in ISO format
 }
 
 os.makedirs('results', exist_ok=True)

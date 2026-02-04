@@ -44,6 +44,4 @@ node_modules
 *:Zone.Identifier
 
 # Gems/Ruby artifacts
-vendor/
-.bundle/
 Gemfile.lock

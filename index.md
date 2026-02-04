@@ -165,7 +165,7 @@ When I'm not working, I like to spend a lot of time working on finding a way to 
 
 <script>
   // Replace 'adityasathis' with your actual GitHub username if different
-  const dataUrl = 'https://github.com/adeeteeyaa/website/blob/scholar-data/scholar/results/gs_stats.json';
+  const dataUrl = 'https://raw.githubusercontent.com/adeeteeyaa/website/refs/heads/scholar-data/scholar/results/gs_stats.json';
 
   fetch(dataUrl)
     .then(response => {
@@ -174,7 +174,7 @@ When I'm not working, I like to spend a lot of time working on finding a way to 
     })
     .then(data => {
       // scholarly saves 'citedby' and 'hindex' as keys in the main object
-      document.getElementById('cite-count').innerText = data.citedby || '0';
+      document.getElementById('cite-count').innerText = data.citations || '0';
       document.getElementById('h-index').innerText = data.hindex || '0';
     })
     .catch(error => {
