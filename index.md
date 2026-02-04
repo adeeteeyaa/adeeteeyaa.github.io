@@ -175,7 +175,7 @@ While I was at Virginia Tech, I was fortunate enough to be part of the Technical
 When I'm not working, I like to spend a lot of time working on finding a way to organize my life, tinkering with software and hardware, working on cars and a little bit of photography and content creation with my wife. More to follow on this space.
 
 <script>
-  const dataUrl = 'https://raw.githubusercontent.com/adeeteeyaa/website/scholar-data/scholar/results/gs_stats.json';
+  const dataUrl = 'https://raw.githubusercontent.com/adeeteeyaa/website/refs/heads/scholar-data/scholar/results/gs_stats.json';
 
   fetch(dataUrl)
     .then(response => {
